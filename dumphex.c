@@ -1,4 +1,5 @@
 #include <stdio.h>
+// testcomment
 
 void dumphex(const void* data, size_t size,char* msg)
 {
