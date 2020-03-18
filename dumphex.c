@@ -7,7 +7,7 @@ void dumphex(const void* data, size_t size,char* msg)
     ascii[16] = '\0';
 
     if (msg != NULL) { 
-        printf("[%s]\n",msg);
+        printf("*** [%s] ***\n",msg);
     }
 
     for (i = 0; i < size; ++i) {
