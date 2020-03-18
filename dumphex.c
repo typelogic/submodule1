@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-void dumphex(const void* data, size_t size)
+void dumphex(const void* data, size_t size,char* msg)
 {
     char ascii[17];
     size_t i, j;
     ascii[16] = '\0';
+
+    if (msg != NULL) printf("[%s]\n",msg);
 
     for (i = 0; i < size; ++i) {
         printf("%02X ", ((unsigned char*)data)[i]);
